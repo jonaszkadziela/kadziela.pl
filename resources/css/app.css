@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    min-width: 300px;
+    font-size: 1rem;
+}
+
+a {
+    transition: all 0.1s;
+    text-decoration: none;
+}
+
+::selection {
+    color: #ffffff;
+    background: #374151;
+}
+
+.bg-dotted {
+    background-image: url("../images/backgrounds/dot-grid.png") !important;
+}
