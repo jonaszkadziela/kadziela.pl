@@ -21,5 +21,11 @@
     </head>
     <body class="{{ $bodyClass }}">
         {{ $slot }}
+        @isset($withFooter)
+            <x-footer encoded-links="{!! json_encode([
+                'hub' => route('hub'),
+                'contact' => 'mailto:contact@jonaszkadziela.pl',
+            ]) !!}" />
+        @endisset
     </body>
 </html>

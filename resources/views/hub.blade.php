@@ -1,5 +1,6 @@
 <x-main-layout title="{{ Lang::get('main.titles.hub') }}"
                body-class="bg-slate-200 flex flex-col min-h-screen"
+               with-footer
 >
     <main class="flex flex-1 items-center justify-center my-12 w-full">
         <div class="bg-white border max-w-xl md:w-2/3 mx-8 p-8 shadow-xl text-center w-full">

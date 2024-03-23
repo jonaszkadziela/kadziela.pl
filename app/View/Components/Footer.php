@@ -2,19 +2,19 @@
 
 namespace App\View\Components;
 
+use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
-use Illuminate\View\View;
 
-class MainLayout extends Component
+class Footer extends Component
 {
+    public array $links;
+
     /**
      * Create a new component instance.
      */
-    public function __construct(
-        public ?string $title = null,
-        public ?string $bodyClass = null,
-        public ?bool $withFooter = null,
-    ) {
+    public function __construct(string $encodedLinks)
+    {
+        $this->links = json_decode($encodedLinks, true);
     }
 
     /**
@@ -22,6 +22,6 @@ class MainLayout extends Component
      */
     public function render(): View
     {
-        return view('layouts.main');
+        return view('components.footer');
     }
 }
