@@ -13,4 +13,8 @@ return [
 
     'description' => 'Kadziela.pl - Hub for all kadziela.pl subdomains',
 
+    'titles' => [
+        'hub' => 'Hub',
+    ],
+
 ];

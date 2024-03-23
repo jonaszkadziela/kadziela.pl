@@ -16,6 +16,7 @@
         <meta property="og:title" content="{{ (isset($title) ? $title . ' - ' : '') . config('app.name') }}">
         <meta property="og:description" content="{{ Lang::get('main.description') }}">
         <meta property="og:url" content="{{ config('app.url') }}">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="{{ $bodyClass }}">
