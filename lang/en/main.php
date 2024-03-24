@@ -11,12 +11,17 @@ return [
     |
     */
 
+    'change-language' => 'Change language',
     'description' => 'Kadziela.pl - Hub for all kadziela.pl subdomains',
 
     'footer' => [
         'programmed-with' => 'Designed and programmed with',
         'by' => 'by',
         'author' => 'Jonasz Kadziela',
+    ],
+    'languages' => [
+        'en' => 'English',
+        'pl' => 'Polish',
     ],
     'titles' => [
         'contact' => 'Contact',

@@ -1,9 +1,10 @@
 <x-main-layout title="{{ Lang::get('main.titles.hub') }}"
                body-class="bg-dotted flex flex-col min-h-screen"
+               with-language-dropdown
                with-footer
 >
     <main class="flex flex-1 items-center justify-center my-12 w-full">
-        <div class="bg-white border max-w-3xl md:p-12 mx-8 p-8 shadow-xl text-center">
+        <div class="bg-white border hover:shadow-xl max-w-3xl md:p-12 mx-8 p-8 shadow-lg text-center transition-shadow">
             <h1 class="mb-8 md:mb-12 md:text-4xl text-3xl">
                 {!! Lang::get('hub.welcome') !!}!
             </h1>

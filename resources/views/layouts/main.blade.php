@@ -20,6 +20,11 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="{{ $bodyClass }}">
+        @isset($withLanguageDropdown)
+            <div class="fixed mr-4 mt-4 right-0 top-0">
+                <x-language-dropdown class="bg-white border hover:shadow-xl px-4 shadow-lg" />
+            </div>
+        @endisset
         {{ $slot }}
         @isset($withFooter)
             <x-footer encoded-links="{!! json_encode([
