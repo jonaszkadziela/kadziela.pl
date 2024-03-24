@@ -69,6 +69,17 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Application Languages
+    |--------------------------------------------------------------------------
+    |
+    | This value defines the languages that are supported by the application.
+    |
+    */
+
+    'languages' => explode(',', env('APP_LANGUAGES', 'en,pl')),
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Locale Configuration
     |--------------------------------------------------------------------------
     |
@@ -78,7 +89,7 @@ return [
     |
     */
 
-    'locale' => env('APP_LOCALE', 'en'),
+    'locale' => env('APP_LOCALE', 'pl'),
 
     'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
 
