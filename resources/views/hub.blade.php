@@ -3,12 +3,12 @@
                with-footer
 >
     <main class="flex flex-1 items-center justify-center my-12 w-full">
-        <div class="bg-white border max-w-xl md:w-2/3 mx-8 p-8 shadow-xl text-center w-full">
-            <h1 class="mb-6 text-3xl">
+        <div class="bg-white border max-w-3xl md:p-12 mx-8 p-8 shadow-xl text-center">
+            <h1 class="mb-8 md:mb-12 md:text-4xl text-3xl">
                 {!! Lang::get('hub.welcome') !!}!
             </h1>
-            <div class="bg-slate-50 border p-4">
-                <p class="mb-4 text-gray-700">
+            <div class="bg-slate-100 border md:p-8 p-4">
+                <p class="mb-4 md:mb-8 md:text-2xl text-gray-700 text-lg">
                     {{ Lang::get('hub.choose-website') }}
                 </p>
                 <div class="flex flex-col items-center justify-center md:flex-row gap-4">
