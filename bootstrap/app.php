@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\DetermineLanguageFromIp;
 use App\Http\Middleware\SetLanguage;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
@@ -17,6 +18,7 @@ return Application::configure(basePath: dirname(__DIR__))
         ]);
 
         $middleware->web([
+            DetermineLanguageFromIp::class,
             SetLanguage::class,
         ]);
     })
