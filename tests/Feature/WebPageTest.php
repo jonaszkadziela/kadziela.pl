@@ -12,4 +12,11 @@ class WebPageTest extends TestCase
 
         $response->assertOk();
     }
+
+    public function test_privacy_page_is_displayed(): void
+    {
+        $response = $this->get('/privacy');
+
+        $response->assertOk();
+    }
 }
