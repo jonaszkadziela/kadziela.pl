@@ -1,5 +1,6 @@
 <x-main-layout title="{{ Lang::get('main.titles.hub') }}"
                body-class="bg-dotted flex flex-col min-h-screen"
+               with-analytics
                with-language-dropdown
                with-footer
 >
