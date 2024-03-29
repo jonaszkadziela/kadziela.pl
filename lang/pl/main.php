@@ -26,6 +26,7 @@ return [
     'titles' => [
         'contact' => 'Kontakt',
         'hub' => 'Hub',
+        'privacy' => 'Polityka prywatności',
     ],
 
 ];
