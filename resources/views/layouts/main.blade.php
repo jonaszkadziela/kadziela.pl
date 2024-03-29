@@ -30,7 +30,7 @@
             <x-footer encoded-links="{!! json_encode([
                 'hub' => route('hub'),
                 'privacy' => route('privacy'),
-                'contact' => 'mailto:contact@jonaszkadziela.pl',
+                'contact' => 'mailto:' . Lang::get('main.contact-email'),
             ]) !!}" />
         @endisset
     </body>

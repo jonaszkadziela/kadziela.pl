@@ -14,7 +14,7 @@
                 </p>
                 <p>
                     {{ Lang::get('privacy.contact') }}
-                    <a href="mailto:kontakt@jonaszkadziela.pl" class="hover:text-gray-900 hover:underline text-gray-700">kontakt@jonaszkadziela.pl</a>.
+                    <a href="mailto:{{ Lang::get('main.contact-email') }}" class="hover:text-gray-900 hover:underline text-gray-700">{{ Lang::get('main.contact-email') }}</a>.
                 </p>
             </div>
         </div>

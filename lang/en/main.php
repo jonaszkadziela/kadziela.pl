@@ -12,6 +12,7 @@ return [
     */
 
     'change-language' => 'Change language',
+    'contact-email' => 'contact@jonaszkadziela.pl',
     'description' => 'Kadziela.pl - Hub for all kadziela.pl subdomains',
 
     'footer' => [
