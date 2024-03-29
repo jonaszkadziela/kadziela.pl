@@ -22,7 +22,7 @@
     <body class="{{ $bodyClass }}">
         @isset($withLanguageDropdown)
             <div class="fixed mr-4 mt-4 right-0 top-0">
-                <x-language-dropdown class="bg-white border hover:shadow-xl px-4 shadow-lg" />
+                <x-language-dropdown class="bg-white border hover:shadow-xl px-4 shadow-md" />
             </div>
         @endisset
         {{ $slot }}
