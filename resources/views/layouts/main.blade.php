@@ -33,5 +33,8 @@
                 'contact' => 'mailto:' . Lang::get('main.contact-email'),
             ]) !!}" />
         @endisset
+        <div class="bottom-0 fixed m-8 right-0 toast-container">
+            @include('toasts.cookies')
+        </div>
     </body>
 </html>
