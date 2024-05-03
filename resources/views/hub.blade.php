@@ -6,6 +6,11 @@
 >
     <main class="flex flex-1 items-center justify-center my-12 w-full">
         <div class="bg-white border hover:shadow-xl max-w-3xl md:p-12 mx-8 p-8 shadow-md text-center transition-shadow">
+            <div class="flex justify-center mb-4">
+                <img class="h-24 w-24"
+                     src="{{ Vite::asset('resources/images/brand/logo.svg') }}"
+                     alt="Logo">
+            </div>
             <h1 class="mb-8 md:mb-12 md:text-4xl text-3xl">
                 {!! Lang::get('hub.welcome') !!}!
             </h1>
