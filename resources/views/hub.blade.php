@@ -1,7 +1,7 @@
 <x-main-layout title="{{ Lang::get('main.titles.hub') }}"
                body-class="bg-black flex flex-col min-h-screen"
+               with-actions
                with-analytics
-               with-language-dropdown
                with-footer
 >
     <main class="flex flex-1 flex-col items-center justify-center my-12 w-full">

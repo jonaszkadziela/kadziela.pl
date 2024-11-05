@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ App::getLocale() }}">
+<html lang="{{ App::getLocale() }}" class="{{ Session::get('theme', config('app.default_theme')) }}">
     <head>
         <title>
             {{ (isset($title) ? $title . ' - ' : '') . config('app.name') }}
@@ -22,18 +22,19 @@
         <link rel="manifest" href="/manifest.json">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-        @if(App::isProduction() && isset($withAnalytics))
+        @if (App::isProduction() && isset($withAnalytics))
             <x-analytics g-id="G-BXRVLNWTXR" />
         @endif
     </head>
     <body class="{{ $bodyClass }}">
-        @isset($withLanguageDropdown)
-            <div class="fixed mr-4 mt-4 right-0 top-0">
+        @isset ($withActions)
+            <div class="fixed flex gap-2 mr-4 mt-4 right-0 top-0">
+                <x-dark-mode-toggle :value="Session::get('theme', config('app.default_theme'))" />
                 <x-dropdown.language class="bg-white border hover:shadow-xl px-4 shadow-md" />
             </div>
         @endisset
         {{ $slot }}
-        @isset($withFooter)
+        @isset ($withFooter)
             <x-footer encoded-links="{!! json_encode([
                 'hub' => route('hub'),
                 'privacy' => route('privacy'),

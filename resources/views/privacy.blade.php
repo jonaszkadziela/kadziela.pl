@@ -1,7 +1,7 @@
 <x-main-layout title="{{ Lang::get('main.titles.privacy') }}"
                body-class="bg-dotted flex flex-col min-h-screen"
+               with-actions
                with-analytics
-               with-language-dropdown
                with-footer
 >
     <main class="flex flex-1 items-center justify-center my-12 w-full">
