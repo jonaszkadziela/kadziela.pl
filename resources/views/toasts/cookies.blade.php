@@ -13,9 +13,9 @@
             <a href="{{ route('privacy') }}" class="hover:text-gray-900 hover:underline text-gray-700">
                 {{ Lang::get('main.cookies.learn-more') }}
             </a>
-            <button type="button" class="bg-gray-700 hover:bg-gray-800 px-2 py-1.5 text-white transition-colors" data-dismiss="#privacy-warning">
+            <x-button.primary type="button" data-dismiss="#privacy-warning">
                 {{ Lang::get('main.cookies.acknowledge') }}
-            </button>
+            </x-button.primary>
         </div>
     </div>
 </div>
