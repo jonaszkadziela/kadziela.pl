@@ -1,5 +1,5 @@
 <x-main-layout title="{{ Lang::get('main.titles.hub') }}"
-               body-class="bg-dotted flex flex-col min-h-screen"
+               body-class="flex flex-col min-h-screen"
                with-analytics
                with-language-dropdown
                with-footer
@@ -32,4 +32,6 @@
             </div>
         </div>
     </main>
+    <canvas id="c" class="absolute inset-0" style="z-index: -1;"></canvas>
+    @vite('resources/js/point-waves-background.js')
 </x-main-layout>
