@@ -10,8 +10,8 @@
         {{ Lang::get('main.footer.programmed-with') }}
         <i class="fa-heart fa-solid text-red-600"></i>
         {{ Lang::get('main.footer.by') }}
-        <a href="https://jonaszkadziela.pl" class="hover:text-gray-900 hover:underline text-gray-700" target="_blank" rel="noopener noreferrer">
+        <x-link.primary href="https://jonaszkadziela.pl" target="_blank" rel="noopener noreferrer">
             {{ Lang::get('main.footer.author') }}
-        </a>
+        </x-link.primary>
     </p>
 </footer>
