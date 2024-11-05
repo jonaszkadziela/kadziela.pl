@@ -8,6 +8,7 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/js/app.js',
                 'resources/js/cookies.js',
+                'resources/js/point-waves-background.js',
             ],
             refresh: true,
         }),
