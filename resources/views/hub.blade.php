@@ -18,13 +18,13 @@
                 {{ Lang::get('hub.choose-website') }}
             </p>
             <div class="flex flex-col items-center justify-center md:flex-row gap-4">
-                <x-website-button name="bartosz.kadziela.pl"
+                <x-button.website name="bartosz.kadziela.pl"
                                   link="https://bartosz.kadziela.pl"
                 />
-                <x-website-button name="jonasz.kadziela.pl"
+                <x-button.website name="jonasz.kadziela.pl"
                                   link="https://jonasz.kadziela.pl"
                 />
-                <x-website-button name="milosz.kadziela.pl"
+                <x-button.website name="milosz.kadziela.pl"
                                   link="https://milosz.kadziela.pl"
                 />
             </div>
