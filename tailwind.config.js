@@ -5,7 +5,11 @@ export default {
         './resources/**/*.blade.php',
     ],
     theme: {
-        extend: {},
+        extend: {
+            textUnderlineOffset: {
+                '6': '6px',
+            },
+        },
     },
     plugins: [],
 }

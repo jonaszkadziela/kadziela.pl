@@ -180,11 +180,13 @@
 
 .markdown a {
     color: #374151;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .markdown a:hover {
     color: #111827;
-    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
 .markdown ol {
