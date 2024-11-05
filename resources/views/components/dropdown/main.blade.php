@@ -23,15 +23,14 @@ $alignmentClasses = implode(' ', [$alignmentClasses, $defaultAlignmentClasses]);
     </div>
 
     <div x-show="open"
-         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter="ease-out duration-200"
          x-transition:enter-start="opacity-0 scale-95"
          x-transition:enter-end="opacity-100 scale-100"
-         x-transition:leave="transition ease-in duration-75"
+         x-transition:leave="ease-in duration-75"
          x-transition:leave-start="opacity-100 scale-100"
          x-transition:leave-end="opacity-0 scale-95"
-         class="absolute hover:shadow-xl mt-2 shadow-md transition-shadow {{ $width }} z-50 {{ $alignmentClasses }}"
+         class="absolute hover:shadow-xl mt-2 shadow-md transition z-50 {{ $width }} {{ $alignmentClasses }}"
          style="display: none;"
-         @click="open = false"
     >
         <div class="ring-1 ring-black ring-opacity-5 {{ $contentClasses }}">
             {{ $content }}
