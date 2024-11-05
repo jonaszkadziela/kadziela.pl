@@ -17,7 +17,7 @@
            type="checkbox"
            @checked($checked)
     >
-    <div class="{{ $sizeClasses }} after:absolute after:bg-white after:border after:border-gray-300 after:content-[''] after:rounded-full after:start-[2px] after:top-[2px] after:transition-all bg-gray-200 dark:bg-gray-700 dark:border-gray-600 peer peer-checked:after:border-white peer-checked:after:translate-x-full peer-checked:bg-blue-600 peer-focus:outline relative rounded-full rtl:peer-checked:after:-translate-x-full"
+    <div class="{{ $sizeClasses }} after:absolute after:bg-white after:border after:border-gray-300 after:content-[''] after:rounded-full after:start-[2px] after:top-[2px] after:transition-all bg-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:outline dark:outline-1 dark:outline-gray-200 peer peer-checked:after:border-white peer-checked:after:translate-x-full peer-checked:bg-blue-600 peer-focus:outline relative rounded-full rtl:peer-checked:after:-translate-x-full"
     ></div>
     @if ($icons->isNotEmpty())
         {{ $icons }}

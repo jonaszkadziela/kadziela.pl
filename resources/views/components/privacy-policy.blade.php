@@ -210,4 +210,12 @@
     list-style-type: disc;
     margin-left: 2rem;
 }
+
+.dark .markdown a {
+    color: #d1d5db;
+}
+
+.dark .markdown a:hover {
+    color: #9ca3af;
+}
 </style>

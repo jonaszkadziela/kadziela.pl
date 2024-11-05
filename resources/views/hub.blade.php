@@ -13,8 +13,8 @@
                 {!! Lang::get('hub.welcome') !!}!
             </h1>
         </div>
-        <div class="bg-white border hover:shadow-xl max-w-3xl md:p-12 mx-8 p-8 shadow-md text-center transition-shadow">
-            <p class="mb-4 md:mb-8 md:text-2xl text-gray-700 text-lg">
+        <div class="bg-white border dark:bg-gray-800 hover:shadow-xl max-w-3xl md:p-12 mx-8 p-8 shadow-md text-center transition-shadow">
+            <p class="dark:text-gray-300 mb-4 md:mb-8 md:text-2xl text-gray-700 text-lg">
                 {{ Lang::get('hub.choose-website') }}
             </p>
             <div class="flex flex-col items-center justify-center md:flex-row gap-4">
