@@ -2,11 +2,14 @@
 
 namespace App\View\Components;
 
+use App\Support\Helpers;
 use Illuminate\View\Component;
 use Illuminate\View\View;
 
 class MainLayout extends Component
 {
+    public ?string $hash;
+
     /**
      * Create a new component instance.
      */
@@ -17,6 +20,7 @@ class MainLayout extends Component
         public ?bool $withAnalytics = null,
         public ?bool $withFooter = null,
     ) {
+        $this->hash = Helpers::getCurrentGitCommitHash();
     }
 
     /**
