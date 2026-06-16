@@ -1,9 +1,13 @@
 {
-    "name": "laravel/laravel",
+    "name": "jonaszkadziela/kadziela.pl",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
-    "license": "MIT",
+    "description": "Kadziela.pl - Hub for all kadziela.pl subdomains.",
+    "keywords": [
+        "kadziela",
+        "website",
+        "hub"
+    ],
+    "license": "proprietary",
     "require": {
         "php": "^8.2",
         "laravel/framework": "^11.0",
