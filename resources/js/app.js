@@ -1,7 +1,7 @@
 import Alpine from 'alpinejs'
-import.meta.glob([
-    '../images/**',
-])
+
+// Import brand images globally to avoid issues with Vite manifest
+import '../images/brand/logo.svg?url'
 
 window.Alpine = Alpine
 
