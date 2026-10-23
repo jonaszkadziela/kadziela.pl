@@ -1,22 +1,56 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss' source(none);
 
-body {
-    min-width: 300px;
-    font-size: 1rem;
+@source '../../app/View/Components';
+@source '../views';
+
+@theme {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-a {
-    transition: all 0.1s;
-    text-decoration: none;
+@custom-variant dark {
+    @media (prefers-color-scheme: dark) {
+        &:not(.light *) {
+            @slot;
+        }
+    }
+
+    &:is(.dark *) {
+        @slot;
+    }
 }
 
-::selection {
-    color: #ffffff;
-    background: #374151;
+@layer base {
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+
+    button:not(:disabled),
+    [role="button"]:not(:disabled) {
+        cursor: pointer;
+    }
 }
 
-.bg-dotted {
+@layer base {
+    body {
+        min-width: 300px;
+        font-size: 1rem;
+    }
+
+    a {
+        transition: all 0.1s;
+        text-decoration: none;
+    }
+
+    ::selection {
+        color: #ffffff;
+        background: #374151;
+    }
+}
+
+@utility bg-dotted {
     background-image: url("../images/backgrounds/dot-grid.png") !important;
 }
