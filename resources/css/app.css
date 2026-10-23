@@ -1,22 +1,52 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss' source(none);
 
-body {
-    min-width: 300px;
-    font-size: 1rem;
+@source '../../app/View/Components';
+@source '../views';
+
+@custom-variant dark {
+    @media (prefers-color-scheme: dark) {
+        &:not(.light *) {
+            @slot;
+        }
+    }
+
+    &:is(.dark *) {
+        @slot;
+    }
 }
 
-a {
-    transition: all 0.1s;
-    text-decoration: none;
+@layer base {
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+
+    button:not(:disabled),
+    [role="button"]:not(:disabled) {
+        cursor: pointer;
+    }
 }
 
-::selection {
-    color: #ffffff;
-    background: #374151;
+@layer base {
+    body {
+        min-width: 300px;
+        font-size: 1rem;
+    }
+
+    a {
+        transition: all 0.1s;
+        text-decoration: none;
+    }
+
+    ::selection {
+        color: #ffffff;
+        background: #374151;
+    }
 }
 
-.bg-dotted {
+@utility bg-dotted {
     background-image: url("../images/backgrounds/dot-grid.png") !important;
 }
